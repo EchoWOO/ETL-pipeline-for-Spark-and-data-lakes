@@ -26,7 +26,7 @@ Then run the following command:
 Files and description:
 
 - **README.md**: explains the project structure and general workflow
-- **dl.cfg**: *please generate this file yourself* File with AWS credentials.
+- **dl.cfg**: **please generate this file yourself** File with AWS credentials.
 - **etl.py**: Extracts songs and log data from S3, transforms it using Spark, and loads the dimensional tables created in parquet format back to S3.
 
 
@@ -48,14 +48,14 @@ Files and description:
 
     Each of the five tables are written to parquet files in a separate analytics directory on S3. Each table has its own folder within the directory.
 
-### Source Data
-- **Song datasets**: all json files are stored in subdirectories under *s3a://udacity-dend/song_data*. Example:
+## Source Data
+- **Song datasets**: all json files are stored in subdirectories under */song_data*. Example:
 
 ```
 {"num_songs": 1, "artist_id": "ARJIE2Y1187B994AB7", "artist_latitude": null, "artist_longitude": null, "artist_location": "", "artist_name": "Line Renaud", "song_id": "SOUPIRU12A6D4FA1E1", "title": "Der Kleine Dompfaff", "duration": 152.92036, "year": 0}
 ```
 
-- **Log datasets**: all json files are stored in subdirectories under *s3a://udacity-dend/log_data*. Example:
+- **Log datasets**: all json files are stored in subdirectories under *log_data*. Example:
 
 ```
 {"artist":"Slipknot","auth":"Logged In","firstName":"Aiden","gender":"M","itemInSession":0,"lastName":"Ramirez","length":192.57424,"level":"paid","location":"New York-Newark-Jersey City, NY-NJ-PA","method":"PUT","page":"NextSong","registration":1540283578796.0,"sessionId":19,"song":"Opium Of The People (Album Version)","status":200,"ts":1541639510796,"userAgent":"\"Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/36.0.1985.143 Safari\/537.36\"","userId":"20"}
